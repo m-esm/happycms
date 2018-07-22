@@ -1,0 +1,20 @@
+﻿@model Form
+@{
+    var Phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = Phrases.CurrentCulture.CultureName();
+    ViewBag.Title = Model.GetCaption(CaptionModes.Create, Phrases);
+    var _settingsDb = new GenericRepository<HCMS.Dynamics.DSystem.Models.Setting>();
+    var themeName = _settingsDb.Get(p => p.Name == "Dynamics.System.Theme").Value;
+
+}
+
+@try
+{
+    <text>@Html.Partial(string.Format("~/Themes/{0}/Manage/{1}CreateOrEditTop.cshtml", themeName, Model.Name))</text>
+    <text>@Html.Partial(string.Format("~/Themes/{0}/Manage/{1}CreateTop.cshtml", themeName, Model.Name))</text>
+}
+catch { }
+
+
+@Html.Partial("Forms/DbForm", Model.ID)
+

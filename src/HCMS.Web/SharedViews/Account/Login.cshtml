@@ -1,0 +1,95 @@
+﻿@using HCMS.Web.Areas.Manage.Models
+@{
+    var Phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = Phrases.CurrentCulture.CultureName();
+
+    ViewBag.Title = Phrases.Get("Login");
+    Layout = null;
+
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | ورود به سیستم</title>
+
+    <link href="~/Packages/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/Packages/melon/css/HappyStyle.min.css" />
+    <link href="~/Packages/sweetalert/sweetalert.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Packages/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="~/Packages/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Packages/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="~/Packages/HCMS/js/DStats.min.js"></script>
+    <script src="~/Packages/HCMS/js/Base.js"></script>
+
+    <link rel="icon" href="~/Packages/serendip-vi/favicon.png" type="image/png" />
+
+
+
+</head>
+<body class="login-page">
+
+    <div class="login">
+
+        <img src="~/Packages/serendip-vi/system-log-in-table-1.svg" />
+
+        <form method="post" id="login-form" action="~/fa-ir/manage/Auth/Login">
+
+
+            @{
+                string login_c_guid = Guid.NewGuid().ToString();
+            }
+
+            @Html.Hidden("captcha_guid", login_c_guid)
+            @Html.AntiForgeryToken()
+
+
+            <input type="hidden" name="isAjax" value="true" />
+            <input type="hidden" name="ReturnUrl" value="/" />
+          
+
+
+
+            <div class="input-field">
+                <label>
+                    آدرس ایمیل
+                </label> <input name="UserName" dir="auto" type="text" placeholder="ایمیل " />
+            </div>
+
+            <div class="input-field">
+                <label>رمز عبور</label> <input name="password" dir="auto" placeholder="رمز عبور" type="password" />
+            </div>
+            <div class="input-field captcha-field">
+                <img src="~/manage/Captcha/msdn?prefix=_login&guid=@login_c_guid" id="captcha-image" />
+                <input id="captcha" autocomplete="off" required type="text" name="captcha" placeholder="کد امنیتی را وارد کنید ..." />
+            </div>
+            <div class="input-field">
+                <input type="submit" value="ورود به سیستم" />
+            </div>
+            <div class="clearfix"></div>
+            <div class="links" style="text-align:center;">
+
+
+                <a id="fgpassword"> فراموشی رمز عبور ؟</a>
+
+                <a id="confirmPassword"> فعال سازی اکانت</a>
+
+
+
+            </div>
+            @*<div class="links">
+                </div>*@
+
+
+        </form>
+
+
+    </div>
+
+
+
+
+    @*@Html.Partial("Account/_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })*@
+</body>
+</html>

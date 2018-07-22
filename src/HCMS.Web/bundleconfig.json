@@ -1,0 +1,123 @@
+[
+  {
+    "outputFileName": "Packages/HCMS/js/Base.Forms.min.js",
+    "inputFiles": [
+      "Packages/HCMS/js/Base.Forms.js"
+    ]
+  },
+  {
+    "outputFileName": "Packages/select2/select2.min.css",
+    "inputFiles": [
+      "Packages/select2/select2.css"
+    ]
+  },
+  {
+    "outputFileName": "Themes/bestmehr2/js/raindrop.min.js",
+    "inputFiles": [
+      "Themes/bestmehr2/js/raindrop.js"
+    ]
+  },
+  {
+    "outputFileName": "Themes/bestmehr2/js/jquery.mosaicflow.min.js",
+    "inputFiles": [
+      "Themes/bestmehr2/js/jquery.mosaicflow.js"
+    ]
+  },
+  {
+    "outputFileName": "Themes/bestmehr2/js/fn.min.js",
+    "inputFiles": [
+      "Themes/bestmehr2/js/fn.js"
+    ]
+  },
+  {
+    "outputFileName": "Themes/bestmehr2/js/bundle.js",
+    "inputFiles": [
+      "Packages/HCMS/js/DStats.min.js",
+      "Packages/jquery-2.1.4/jquery-2.1.4.min.js",
+      "Packages/bootstrap-3.3.6-dist/js/bootstrap.min.js",
+      "Packages/sweetalert/sweetalert.min.js",
+      "Themes/bestmehr2/js/moment.min.js",
+      "Themes/bestmehr2/js/jquery.mosaicflow.js",
+      "Themes/bestmehr2/js/fn.js"
+    ]
+  },
+  {
+    "outputFileName": "Packages/bootstrap-3.3.6-dist/css/bootstrap-theme.min.min.css",
+    "inputFiles": [
+      "Packages/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css"
+    ]
+  },
+  {
+    "outputFileName": "Themes/happy/js/fn.min.js",
+    "inputFiles": [
+      "Themes/happy/js/fn.js"
+    ]
+  },
+  {
+    "outputFileName": "Themes/happy/js/bundle.js",
+    "inputFiles": [
+      "Packages/jquery-2.1.4/jquery-2.1.4.min.js",
+      "Packages/bootstrap-3.3.6-dist/js/bootstrap.min.js",
+      "Themes/happy/js/prism.js",
+      "Themes/happy/js/fn.js"
+    ]
+  },
+  {
+    "outputFileName": "Themes/happy/css/bundle.css",
+    "inputFiles": [
+      "Themes/happy/css/bootstrap-theme.css",
+      "Themes/happy/css/bootstrap.css",
+      "Themes/happy/css/bootstrap-flipped.css",
+      "Themes/happy/css/font-awesome.css",
+      "Themes/happy/css/prism.css",
+      "Themes/happy/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "Themes/happyplay/css/bundle.css",
+    "inputFiles": [
+      "Themes/happyplay/css/bootstrap-theme.css",
+      "Themes/happyplay/css/bootstrap.css",
+      "Themes/happyplay/css/bootstrap-flipped.css",
+      "Themes/happyplay/css/font-awesome.css",
+      "Themes/happyplay/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "Themes/happyplay/js/bundle.js",
+    "inputFiles": [
+      "Packages/jquery-2.1.4/jquery-2.1.4.min.js",
+      "Packages/bootstrap-3.3.6-dist/js/bootstrap.min.js",
+      "Themes/happyplay/js/jquery.mosaicflow.js",
+      "Themes/happyplay/js/fn.js"
+    ]
+  },
+  {
+    "outputFileName": "Themes/bestmehr2/css/site.min.css",
+    "inputFiles": [
+      "Themes/bestmehr2/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "Themes/raminpahlavan/js/webapp.min.js",
+    "inputFiles": [
+      "Themes/raminpahlavan/js/webapp.js"
+    ]
+  },
+  {
+    "outputFileName": "Themes/Anzim/css/theme.min.css",
+    "inputFiles": [
+      "Themes/Anzim/css/theme.css"
+    ]
+  },
+  {
+    "outputFileName": "Themes/serendip.agency/assets/bundle.css",
+    "inputFiles": [
+      "Themes/serendip.agency/assets/features.min.css",
+      "Themes/serendip.agency/assets/home.min.css",
+      "Themes/serendip.agency/assets/pricing.min.css",
+      "Themes/serendip.agency/assets/reset.min.css",
+      "Themes/serendip.agency/assets/styles.min.css"
+    ]
+  }
+]

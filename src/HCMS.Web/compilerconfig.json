@@ -1,0 +1,70 @@
+﻿[
+  {
+    "outputFile": "Themes/Hannan/Content/style.css",
+    "inputFile": "Themes/Hannan/Content/style.less"
+  },
+  {
+    "outputFile": "Themes/Hannan/Content/style-rtl.css",
+    "inputFile": "Themes/Hannan/Content/style-rtl.less"
+  },
+  {
+    "outputFile": "Packages/melon/css/main.css",
+    "inputFile": "Packages/melon/css/main.less"
+  },
+  {
+    "outputFile": "Packages/melon/css/HappyStyle.css",
+    "inputFile": "Packages/melon/css/HappyStyle.less"
+  },
+  {
+    "outputFile": "Themes/bestmehr2/css/site.css",
+    "inputFile": "Themes/bestmehr2/css/site.less"
+  },
+  {
+    "outputFile": "Themes/happy/css/style.css",
+    "inputFile": "Themes/happy/css/style.less"
+  },
+  {
+    "outputFile": "Themes/happy/css/responsive-style.css",
+    "inputFile": "Themes/happy/css/responsive-style.less"
+  },
+  {
+    "outputFile": "Themes/bestmehr2/css/responsive.css",
+    "inputFile": "Themes/bestmehr2/css/responsive.less"
+  },
+  {
+    "outputFile": "Packages/CKEditor/contents.css",
+    "inputFile": "Packages/CKEditor/contents.less"
+  },
+  {
+    "outputFile": "Themes/happyplay/css/style.css",
+    "inputFile": "Themes/happyplay/css/style.less"
+  },
+  {
+    "outputFile": "Themes/Anzim/css/custom.css",
+    "inputFile": "Themes/Anzim/css/custom.less"
+  },
+  {
+    "outputFile": "Themes/Anzim/css/rtl.css",
+    "inputFile": "Themes/Anzim/css/rtl.less"
+  },
+  {
+    "outputFile": "Themes/serendip.agency/assets/styles.css",
+    "inputFile": "Themes/serendip.agency/assets/styles.less"
+  },
+  {
+    "outputFile": "Themes/serendip.agency/assets/reset.css",
+    "inputFile": "Themes/serendip.agency/assets/reset.less"
+  },
+  {
+    "outputFile": "Themes/serendip.agency/assets/pricing.css",
+    "inputFile": "Themes/serendip.agency/assets/pricing.less"
+  },
+  {
+    "outputFile": "Themes/serendip.agency/assets/home.css",
+    "inputFile": "Themes/serendip.agency/assets/home.less"
+  },
+  {
+    "outputFile": "Themes/serendip.agency/assets/features.css",
+    "inputFile": "Themes/serendip.agency/assets/features.less"
+  }
+]

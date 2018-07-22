@@ -1,0 +1,41 @@
+﻿@model IEnumerable<FormFieldValue>
+
+@{
+
+
+    var Phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = Phrases.CurrentCulture.CultureName();
+
+
+    var form = Model.First().Field.Form;
+    ViewBag.Title = Phrases.Get("Details Of") + " " +form.Caption;
+
+}
+
+<h2>@ViewBag.title</h2>
+<table class="table table-bordered table-striped table-hover">
+
+  @foreach (var item in Model)
+  {
+    <tr>
+        <td>
+            <h4>@item.Field.Label :</h4>
+            <div>
+                @*@Html.Partial("Grids/_CellRender", new HCMS.Dynamics.Grids.Models.StandradGridModel { Field = item.Field, DRow = HCMS.Dynamics.Data.DDB.GetTable( })*@
+              @Html.Raw(item.Value.Replace(Environment.NewLine,"<br />"))
+            </div>
+        </td>
+    </tr>
+  }
+
+</table>
+
+<div class="text-left">
+
+    <a class="btn btn-primary" href="~/@cc/Manage/Dynamics/@ViewBag.SectionName/@ViewBag.FormName/index">
+  <i class="fa fa-list"></i>   @Phrases.Get("Back To")   @ViewBag.FormCaption 
+    </a>
+
+</div>
+
+<hr />

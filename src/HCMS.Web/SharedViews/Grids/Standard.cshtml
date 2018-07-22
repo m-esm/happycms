@@ -1,0 +1,138 @@
+﻿@using System.Web.UI.WebControls
+@using MoreLinq
+@using HCMS.Dynamics.Grids.Models
+@using PagedList.Mvc;
+@using PagedList;
+
+@{
+    var Phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = Phrases.CurrentCulture.CultureName();
+    int cpage = 1;
+
+    if (Request.QueryString["page"] != null)
+    {
+        int.TryParse(Request.QueryString["page"], out cpage);
+    }
+
+    Form form = ViewBag.DynamicsForm;
+    Layout = ViewBag.Layout;
+    ViewBag.Title = form.GetCaption(CaptionModes.List, Phrases);
+    FormBuilderRepository formBuilder = new FormBuilderRepository(form.ID);
+    var rows = HCMS.Dynamics.Data.DDB.GetTable(form.Section.Name, form.Name, Phrases.CurrentCulture.ID).DRows.OrderByDescending(p=>p.RowID);
+
+    //TODO: paging . rowa => model.
+
+
+    int _pageSize = 15;
+
+    var PagedRows = rows.ToPagedList(cpage, _pageSize);
+    int i = PagedRows.FirstItemOnPage;
+
+
+    var _settingsDb = new GenericRepository<HCMS.Dynamics.DSystem.Models.Setting>();
+    var themeName = _settingsDb.Get(p => p.Name == "Dynamics.System.Theme").Value;
+}
+
+
+<br />
+
+
+
+
+<p class="buttons">
+    <a class="btn btn-sm btn-success" href="~/@cc/Manage/Dynamics/@form.Section.Name/@form.Name/Create">
+        <i class="fa fa-plus"></i>
+        @Phrases.Get("Submit new item")
+    </a>
+</p>
+
+
+
+@try
+{
+    <text>@Html.Partial(string.Format("~/Themes/{0}/Manage/{1}ListTop.cshtml", themeName, form.Name))</text>
+
+}
+catch { }
+<div class="table-responsive">
+    <table class="table table-bordered table-striped hcms-standard-grid">
+        <thead>
+            <tr>
+                <th class="en">
+                    #
+                </th>
+                @*<th class="en">
+                        RowId
+                    </th>*@
+                @foreach (var prop in form.Fields.Where(p => p.ShowInGrid).OrderBy(p => p.OrderID))
+            {
+                    <th>
+                        @Phrases.Get(prop.Label)
+                    </th>
+                }
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="result">
+            @foreach (var row in PagedRows)
+            {
+
+                <tr>
+                    @*<td class="en">
+                            @i
+                        </td>*@
+                    <td class="en">
+                        @row.RowID
+                    </td>
+                    @foreach (var field in form.Fields.Where(p => p.ShowInGrid).OrderBy(p => p.OrderID))
+                {
+                        <td>
+                            @if (field.AllowMultipleEntry)
+                            {
+                                foreach (var mfield in row.GetGroup(field.GroupWith))
+                                {
+
+                                    @Html.Partial("Grids/_CellRender", new StandradGridModel { DRow = mfield.GetValue(field.Name), Field = field })
+                                    @Html.Raw(field.MultipleEntrySpliter)
+
+                                }
+                            }
+                            else
+                            {
+
+                                @Html.Partial("Grids/_CellRender", new StandradGridModel { DRow = row.GetValue(field.Name), Field = field })
+
+                            }
+                        </td>
+                    }
+
+
+                    <td class="minW100">
+                        <a title="@Phrases.Get("Details")" href="~/@cc/Manage/Dynamics/@form.Section.Name/@form.Name/Details?RowID=@row.RowID" class="btn btn-icon btn-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a title="@Phrases.Get("Edit")" href="~/@cc/Manage/Dynamics/@form.Section.Name/@form.Name/Edit?RowID=@row.RowID" class="btn btn-icon btn-primary">
+
+
+                            <i class="fa fa-edit"></i>
+
+                        </a>
+                        <a title="@Phrases.Get("Delete")" href="~/@cc/Manage/Dynamics/@form.Section.Name/@form.Name/Delete?RowID=@row.RowID" class="btn btn-icon btn-danger">
+
+                            <i class="fa fa-trash"></i>
+                        </a>
+
+                    </td>
+                </tr>
+
+                i++;
+
+            }
+
+        </tbody>
+
+    </table>
+</div>
+@Html.PagedListPager((IPagedList)PagedRows, page => Url.Action("Index", new { page }))
+
+
