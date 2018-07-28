@@ -1,0 +1,229 @@
+﻿@model HCMS.Dynamics.Forms.Models.Form
+@using HCMS.Dynamics.Data
+@using HCMS.Business.Auth
+@{
+    var Phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = Phrases.CurrentCulture.CultureName();
+    ViewBag.title = Model.Caption + " " + Phrases.Get("Dashboard");
+    Layout = "~/SharedViews/Admin/_Layout.cshtml";
+
+    var rows = DDB.GetTable(Model.ID, Phrases.CurrentCulture.ID).DRows;
+
+
+
+    if (Request.QueryString["doneTask"] != null)
+    {
+        var toEdit = rows.First(p => p.RowID == int.Parse(Request.QueryString["doneTask"].ToString()));
+        toEdit.changeValue("done", "true", UserRepository.GetUserIdByUsername(User.Identity.Name));
+        Response.Redirect(Request.UrlReferrer.ToString());
+    }
+
+    var user = "";
+
+    if (Request.QueryString["user"] != null)
+    {
+        user = Request.QueryString["user"].ToString();
+    }
+
+
+    var status = "";
+
+    if (Request.QueryString["status"] != null)
+    {
+        status = Request.QueryString["status"].ToString();
+    }
+
+    var project = "";
+
+    if (Request.QueryString["project"] != null)
+    {
+        project = Request.QueryString["project"].ToString();
+    }
+
+
+    if (!string.IsNullOrWhiteSpace(project))
+    {
+        rows = rows.Where(p => p.GetValue("projectId").Value == project);
+    }
+
+    if (!string.IsNullOrWhiteSpace(user))
+    {
+        rows = rows.Where(p => p.GetValue("user").Value == user);
+    }
+
+    if (!string.IsNullOrWhiteSpace(status))
+    {
+        rows = rows.Where(p => p.GetValue("done").Value.ToLower() == status.ToLower());
+    }
+
+
+
+    rows = rows.OrderByDescending(p=>p.GetValue("done").Value).ThenBy(p => p.GetValue("priority").Value);
+    var projects = DDB.GetTable("cms", "projects").DRows;
+
+}
+
+
+<div class="box-bordered">
+
+    <label>
+        Total hours : @rows.Sum(p => int.Parse(p.GetValue("hours").Value))
+    </label>
+    <br />
+    <label>
+        Total hours max : @rows.Sum(p => int.Parse(p.GetValue("hours").Value) * int.Parse(p.GetValue("uf").Value))
+    </label>
+
+
+
+
+    <form method="get">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <label>
+                    project :
+                </label>
+                <select name="project">
+                    <option value="">All</option>
+
+
+                    @foreach (var item in projects)
+                    {
+                        <option value="@item.RowID" @(project == item.RowID.ToString() ? "selected=selected" : "")>@item.GetValue("name")</option>
+                    }
+                </select>
+            </div>
+
+
+            <div class="col-sm-3">
+                <label>
+                    user :
+                </label>
+                <select name="user">
+                    <option value="">All</option>
+                    @foreach (var gu in rows.GroupBy(p => p.GetValue("user").Value))
+                    {
+                        var guser = gu.First().GetValue("user").Value;
+
+                        <option value="@guser" @(guser == user ? "selected=selected" : "")>@UserRepository.GetFullNameByUserId(guser)</option>
+                    }
+
+
+                </select>
+            </div>
+
+            <div class="col-sm-3">
+                <label>
+                    status :
+                </label>
+                <select name="status">
+                    <option value="">All</option>
+
+                    <option value="true" @(status == "true" ? "selected=selected" : "")>Done</option>
+                    <option value="false" @(status == "false" ? "selected=selected" : "")>Not done</option>
+
+
+
+                </select>
+            </div>
+
+
+
+
+            <div class="col-sm-12">
+                <br />
+                <button type="submit" class="btn btn-icon btn-primary">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+
+    </form>
+
+</div>
+
+<div class="table-responsive">
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>
+                    Hours
+                </th>
+                <th>
+                    UF
+                </th>
+                <th>
+                    Max
+                </th>
+                <th>
+                    Avg
+                </th>
+                <th>
+                    User
+                </th>
+                <th>
+                    Project
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in rows)
+            {
+
+                <tr>
+                    <td>
+                        <a class="" href="/@cc/Manage/Dynamics/CMS/devtasks/edit?rowid=@item.RowID">
+                            @item.GetValue("task")
+                        </a>
+                    </td>
+
+                    <td>
+                        @item.GetValue("hours")
+                    </td>
+                    <td>
+                        @item.GetValue("uf")
+                    </td>
+                    <td>
+                        @(int.Parse(item.GetValue("hours").Value) * int.Parse(item.GetValue("uf").Value))
+                    </td>
+                    <td>
+                        @(int.Parse(item.GetValue("hours").Value) * int.Parse(item.GetValue("uf").Value) / 2)
+                    </td>
+                    <td>
+                        @UserRepository.GetFullNameByUserId(item.GetValue("user").Value)
+                    </td>
+                    <td>
+                        @item.GetValue("project.name")
+                    </td>
+                    <td>
+                        @if (item.GetValue("done").Value == "false")
+                        {
+                            <a class="btn btn-icon btn-primary" href="/@cc/Manage/Dynamics/CMS/devtasks/dashboard?doneTask=@item.RowID">
+                                <i class="fa fa-check"></i>
+                            </a>
+
+                        }
+                        else if (item.GetValue("done").Value.ToLower() != "false")
+                        {
+                            <a class="btn btn-icon btn-success">
+                                <i class="fa fa-check"></i>
+                            </a>
+                        }
+
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+
+</div>

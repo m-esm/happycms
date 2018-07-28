@@ -1,0 +1,355 @@
+﻿
+@using HCMS.Dynamics.Tools
+@{
+
+    ViewBag.title = "تعرفه استفاده از خدمات CRM";
+}
+<div id="pricing">
+
+    <div class="container">
+
+        <h1>
+            نسخه‌ها و تعرفه‌های سی آر ام سرندیپ
+        </h1>
+
+
+        <div class="blocks">
+
+            <div class="block">
+                <div class="inner">
+                    <img src="~/Themes/serendip.agency/assets/svg/free-box-c.svg" alt="" />
+                    <div class="title">
+                        دو کاربره
+                    </div>
+                    <div class="base">
+                        <div class="half"></div>
+                        قیمت پایه: رایگان
+                        <div class="half"></div>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+
+                            <b>
+                                خط اس ام اس اشتراکی
+                            </b>
+                            <br> (قابلیت انتخاب بین خطوط اشتراکی)
+                        </li>
+                        <li>
+
+                            <b>
+                                @("100".ToPersianNumber())
+
+                                پیامک رایگان با شروع همکاری
+                            </b>
+
+                            <br> (@("17,000".ToPersianNumber())
+                            ریال هزینه هر
+                            @("100".ToPersianNumber())
+                            عدد اس ام اس مازاد)
+                        </li>
+                        <li>
+                            <b>
+                                @("10".ToPersianNumber())   فکس رایگان با شروع همکاری
+                            </b>
+                            <br> (@("10،000".ToPersianNumber())  
+                            ریال هزینه هر
+                            @("10".ToPersianNumber()) 
+                            عدد فکس مازاد)
+                        </li>
+
+                        <li>
+                            <b>
+                                @("1000".ToPersianNumber())  ایمیل رایگان با شروع همکاری
+                            </b>
+                            <br> (@("100،000".ToPersianNumber())  
+                            ریال هزینه هر
+                            @("1000".ToPersianNumber()) 
+                            عدد ایمیل مازاد)
+                        </li>
+
+                        <li>
+                            <div class="half"></div>
+
+                            <b>
+
+                                @("1".ToPersianNumber()) 
+                                گیگابایت فضای ذخیره‌سازی
+                            </b>
+                            <div class="half"></div>
+
+                        </li>
+
+                        <li>
+                            <div class="half"></div>
+
+                            <b>
+                                @("10،000".ToPersianNumber())  
+                                رکورد
+                            </b>
+                            <div class="half"></div>
+
+                        </li>
+
+                        <li>
+                            <div class="half"></div>
+
+                            <b>
+                                پشتیبانی از طریق تیکت و ایمیل
+                            </b>
+                            <div class="half"></div>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="button">
+                    <img src="~/Themes/serendip.agency/assets/svg/free-subscribe-button-b.svg" alt="" />
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="inner">
+                    <img src="~/Themes/serendip.agency/assets/svg/pro-box-c.svg" alt="" />
+
+                    <div class="title">
+                        پنج کاربره
+                    </div>
+                    <div class="base">
+                        قیمت پایه:
+                        @("2،000،000".ToPersianNumber())  ماهانه
+                        ریال
+                        <br>
+                        (هر کاربر مازاد 
+                        @("400،000".ToPersianNumber())
+                        ریال 
+                        ماهانه)
+
+                    </div>
+
+                    <ul>
+
+
+                        <li>
+
+                            <b>
+                                تخصیص خط اس ام اس
+                            </b>
+                            <br> (قابلیت خرید خط های اپراتور
+                            @("1000".ToPersianNumber())
+                            و
+                            @("3000".ToPersianNumber())
+                            )
+                        </li>
+
+                        <li>
+                            <b>
+                                @("500".ToPersianNumber())        پیامک ماهیانه
+                            </b>
+
+                            <br> (@("15،000".ToPersianNumber())
+                            ریال هزینه هر
+                            @("100".ToPersianNumber())
+                            عدد اس ام اس مازاد)
+
+
+                        </li>
+
+
+                        <li>
+                            <b>
+                                @("500".ToPersianNumber())      فکس ماهیانه
+                            </b>
+
+                            <br> (@("10،000".ToPersianNumber())
+                            ریال هزینه هر
+                            @("10".ToPersianNumber())
+                            عدد فکس مازاد)
+
+                        </li>
+
+                        <li>
+                            <b>
+                                @("1000".ToPersianNumber())   ایمیل ماهیانه
+                            </b>
+
+                            <br> (@("100،000".ToPersianNumber())
+                            ریال هزینه هر
+                            @("1000".ToPersianNumber())
+                            عدد ایمیل مازاد)
+
+                        </li>
+
+
+                        <li>
+                            <div class="half"></div>
+
+                            <b>
+                                @("10".ToPersianNumber())
+                                گیگابایت فضای ذخیره‌سازی
+                            </b>
+                            <div class="half"></div>
+
+                        </li>
+
+                        <li>
+                            <div class="half"></div>
+
+                            <b>
+                                @("100،000".ToPersianNumber())
+                                رکورد
+                            </b>
+                            <div class="half"></div>
+
+                        </li>
+                        <li>
+                            <b>
+                                پشتیبانی تلفنی
+                            </b>
+                            <br> (روزهای کاری از ساعت
+                            @("9".ToPersianNumber())    تا
+                            @("17".ToPersianNumber())
+                            )
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="button">
+                    <img src="~/Themes/serendip.agency/assets/svg/pro-subscribe-b.svg" alt="" />
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="inner">
+                    <img src="~/Themes/serendip.agency/assets/svg/enterprise-box-c.svg" alt="" />
+
+                    <div class="title">
+                        بدون محدودیت کاربر
+                    </div>
+                    <div class="base">
+                        <div class="half"></div>
+                        قیمت پایه: تماس بگیرید
+                        <div class="half"></div>
+                    </div>
+
+                    <ul>
+
+
+
+                        <li>
+                            <b>
+                                تخصیص خط اس ام اس
+                            </b>
+                            <br> (با قابلیت استفاده از خطوط شما)
+                        </li>
+                        <li>
+                            <b>
+                                @("15،000".ToPersianNumber())        پیامک رایگان با شروع همکاری
+                            </b>
+
+                            <br> (@("100".ToPersianNumber())
+                            ریال هزینه هر
+                            @("100".ToPersianNumber())
+                            عدد اس ام اس مازاد)
+
+
+                        </li>
+
+
+                        <li>
+                            <b>
+                                @("1000".ToPersianNumber())        فکس رایگان با شروع همکاری
+                            </b>
+
+                            <br> (@("10،000".ToPersianNumber())
+                            ریال هزینه هر
+                            @("10".ToPersianNumber())
+                            عدد فکس مازاد)
+
+                        </li>
+
+                        <li>
+                            <b>
+                                @("10،000".ToPersianNumber())       ایمیل رایگان با شروع همکاری
+                            </b>
+
+                            <br> (@("50،000".ToPersianNumber())
+                            ریال هزینه هر
+                            @("1000".ToPersianNumber())
+                            عدد ایمیل مازاد)
+
+                        </li>
+
+
+                        <li>
+                            <div class="half"></div>
+
+                            <b>
+                                @("1".ToPersianNumber())
+                                ترابایت فضای ذخیره‌سازی
+                            </b>
+                            <div class="half"></div>
+
+                        </li>
+
+                        <li>
+                            <div class="half"></div>
+
+                            <b>
+                                عدم محدودیت در تعداد رکورد
+                            </b>
+                            <div class="half"></div>
+
+                        </li>
+
+
+                        <li>
+                            <b>
+                                باکس اختصاصی سرندیپ
+
+                            </b>
+                            <br>
+                            <span class="en">
+                                (Local server)
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="button">
+                    <img src="~/Themes/serendip.agency/assets/svg/enterprise-subscribe-button-b.svg" alt="" />
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="notes">
+            <p>
+                امکانات نرم‌افزار در تمامی نسخه‌ها یکسان می‌باشد.
+            </p>
+            <p>
+                لازم به ذکر است که بهای نسخه‌ها بدون محاسبه مالیات بر ارزش افزوده ارائه شده است.
+            </p>
+            <p>
+                نسخه تجاری را به همراه پشتیبانی و آموزش تلفنی پرسنل به علاوه
+                @("8".ToPersianNumber())
+
+                ساعت آموزش رایگان حضوری جهت استفاده بهینه از نرم‌افزار خریداری
+                کنید.
+            </p>
+
+
+
+        </div>
+    </div>
+
+</div>

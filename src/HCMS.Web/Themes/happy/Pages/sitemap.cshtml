@@ -1,0 +1,40 @@
+﻿@using MoreLinq
+@using HCMS.Dynamics.Data
+@{
+    Layout = null;
+
+    var Phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = Phrases.CurrentCulture.CultureName();
+
+    var blog = DDB.GetTable("CMS", "blog").DRows;
+
+    var urlLeftPart = Request.Url.GetLeftPart(UriPartial.Authority);
+
+    Response.ClearContent();
+    Response.ClearHeaders();
+    Response.ContentType = "text/xml";
+
+}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>@urlLeftPart</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+
+
+    @foreach (var post in blog)
+    {
+        <url>
+            <loc>@urlLeftPart/blog/@post.GetValue("slug").Value.Trim().Replace(" ","-")</loc>
+            <changefreq>monthly</changefreq>
+            <priority>1.00</priority>
+            <lastmod>
+                @post.getChangeDate().ToString("yyyy-MM-dd")
+            </lastmod>
+        </url>
+    }
+
+
+
+</urlset>

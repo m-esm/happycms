@@ -1,0 +1,95 @@
+#pricing {
+    text-align: center;
+    padding-bottom: 100px;
+    h1 {
+        font-size: 30px;
+        padding: 60px 0 20px 0;
+        margin:0 auto;
+
+        margin-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+        max-width: 1030px;
+    }
+    .button{
+        box-sizing: border-box;
+        img{
+            display: block;
+            border-radius:5px;
+        }
+    }
+    .notes {
+        max-width: 1030px;
+
+        margin:60px auto;
+        p {
+            padding: 5px;
+            text-align: start;
+        }
+    }
+    .blocks {
+        .block {
+            .inner {
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+                padding-bottom: 30px;
+            }
+            width: 320px;
+            display: inline-block;
+            box-sizing: border-box;
+            vertical-align: top;
+            margin: 15px;
+            .title {
+                font-weight: bold;
+                font-size: 26px;
+                margin-top: 10px;
+            }
+            .base {
+                font-size: 15px;
+                line-height: 22px;
+                border-bottom: 3px solid #333;
+                width: 240px;
+                margin: 0 auto;
+                padding: 20px 0;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                .half {
+                    height: 11px;
+                }
+            }
+            ul {
+                padding: 0 10px;
+                li {
+                    border-bottom: 1px solid #ccc;
+                    font-size: 14px;
+                    line-height: 22px;
+                    padding: 8px 0;
+                    .half {
+                        height: 11px;
+                    }
+                    b {
+                        font-size: 15px;
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px){
+
+    #pricing{
+        padding-bottom:30px;
+        }
+    #pricing h1{
+        font-size:19px;
+        
+        }
+
+    #pricing .notes{
+        margin:0;
+        padding:15px;
+        }
+    }

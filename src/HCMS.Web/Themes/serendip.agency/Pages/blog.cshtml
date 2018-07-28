@@ -1,0 +1,299 @@
+﻿@using HCMS.Business
+@using HCMS.Business.Auth
+@using HCMS.Dynamics.Forms.Models
+@using HCMS.Dynamics.Data
+@using HCMS.Dynamics.Tools
+@using MoreLinq
+@using PagedList
+
+@{
+
+    IEnumerable<HCMS.Dynamics.Data.DRow> Model = null;
+    var phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = phrases.CurrentCulture.CultureName();
+
+    var cats = DDB.GetTable("cms", "blog_cats").DRows.OrderByDescending(p => p.RowID);
+
+    var rows = DDB.GetTable("cms", "blog").DRows.OrderByDescending(p => p.RowID);
+
+    var tags = rows.Where(p => !string.IsNullOrWhiteSpace(p.GetValue("tags").Value))
+              .SelectMany(p => p.GetValue("tags").Value.Trim().Replace(" ", "").Split(new string[] { "#" }, StringSplitOptions.RemoveEmptyEntries)).DistinctBy(p => p);
+
+    tags = tags.RandomSubset(tags.Count() > 10 ? 10 : tags.Count());
+
+    ViewBag.title = "وبلاگ";
+
+
+    Model = rows;
+
+    var valueRepo = new GenericRepository<FormFieldValue>();
+
+    string slug = "";
+    string search = "";
+    string category = "";
+    string tag = "";
+
+    int pageSize = 10;
+    int currentPage = 1;
+
+    if (ViewContext.RouteData.Values["slug"] != null)
+    {
+        slug = ViewContext.RouteData.Values["slug"].ToString().Trim().ToLower();
+    }
+
+
+    if (ViewContext.RouteData.Values["tag"] != null)
+    {
+        tag = ViewContext.RouteData.Values["tag"].ToString().Trim().ToLower();
+    }
+
+
+
+    if (ViewContext.RouteData.Values["category"] != null)
+    {
+        category = ViewContext.RouteData.Values["category"].ToString().Trim().ToLower();
+    }
+
+
+
+    if (Request.QueryString["search"] != null)
+    {
+        search = Request.QueryString["search"].ToString().Trim().ToLower();
+    }
+
+    if (!string.IsNullOrWhiteSpace(search))
+    {
+        Model = Model.Where(p => p.GetValue("content").Value.ToLower().Contains(search) || p.GetValue("title").Value.ToLower().Contains(search));
+    }
+
+    if (!string.IsNullOrWhiteSpace(tag))
+    {
+        Model = Model.Where(p => string.IsNullOrWhiteSpace(p.GetValue("tags").Value) == false).Where(p => p.GetValue("tags").Value.Contains(tag));
+    }
+
+
+    if (!string.IsNullOrWhiteSpace(slug))
+    {
+        Model = Model.Where(p => p.GetValue("slug").Value.Trim().ToLower().Replace(" ", "-") == slug.Trim().ToLower().Replace(" ", "-"));
+    }
+
+    if (!string.IsNullOrWhiteSpace(category))
+    {
+        string catId = "X";
+
+        var cat = cats.FirstOrDefault(p => p.GetValue("slug").Value == category);
+        if (cat != null)
+        {
+            catId = cat.RowID.ToString();
+        }
+
+        Model = Model.Where(p => p.GetValue("categoryId").Value == catId);
+    }
+
+
+    if (Model.Count() > pageSize)
+    {
+
+        if (ViewContext.RouteData.Values["page"] != null)
+        {
+            int.TryParse(ViewContext.RouteData.Values["page"].ToString().Trim().ToLower(), out currentPage);
+        }
+
+        Model = Model.ToPagedList(currentPage, pageSize);
+
+    }
+
+
+    if (Model.Count() == 1)
+    {
+
+        ViewBag.title = Model.First().GetValue("title");
+    }
+
+
+}
+
+
+<div id="blog" class="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 sidebar">
+                <div class="widget search">
+                    <div data-form-validation="true">
+                        <form action="/blog" method="get" novalidate="novalidate">
+                            <input type="text" name="search" placeholder="جست و جو ..." class="form-control" required="" value="@search" aria-required="true">
+                            <button type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="widget cats">
+                    <div class="title">
+                        <i class="fa fa-th"></i>
+
+                        دسته بندی ها
+                    </div>
+                    <ul>
+                        @foreach (var item in cats)
+                        {
+                            <li>
+                                <a href="/blog/categories/@item.GetValue("slug")">
+                                    <i class="fa fa-list"></i>
+                                    @item.GetValue("name")
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <div class="widget tags">
+                    <div class="title">
+                        <i class="fa fa-hashtag"></i>
+                        هشتگ ها
+                    </div>
+                    <ul>
+
+                        @foreach (var item in tags)
+                        {
+                            <li>
+                                <a href="/blog/tag/@item">
+                                    <i class="fa fa-hashtag"></i>
+                                    @item
+                                </a>
+                            </li>
+                        }
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-8 posts">
+                @if (Model.Count() == 0)
+                {
+                    <text>
+                        @Html.Partial("404")
+                    </text>
+                }
+                @foreach (var item in Model)
+                {
+                    var publisher = UserRepository.GetUserById(valueRepo.Get(p => p.RowID == item.RowID).UserId);
+                    var postslug = item.GetValue("slug").Value.Trim().ToLower().Replace(" ", "-");
+
+                    <div class="post">
+                        <h1>
+                            <a href="/blog/@postslug">@item.GetValue("title")</a>
+                        </h1>
+                        <div class="meta">
+                            <i class="fa fa-calendar"></i>
+                            @(m2s.m2sMMWithHours(item.getCreateDate()))
+
+                            @*@if (publisher != null)
+                                {
+                                    <span class="separator">|</span>
+                                    <i class="fa fa-user"></i>
+                                     @publisher.FirstName
+                                }*@
+                        </div>
+                        <div class="banner">
+                            <a href="/blog/@postslug">
+                                <img src="@item.GetValue("banner").Value.Replace("http://happyspider.org","https://happyspider.org")?width=600" alt="" class="img-responsive">
+                            </a>
+                        </div>
+
+
+                        @if (string.IsNullOrWhiteSpace(slug))
+                        {
+                            <div class="intro">
+                                @Html.Raw(item.GetValue("intro").ToString())
+                            </div>
+                            <div class="buttons">
+                                <a href="/blog/@postslug" class="btn btn-primary">
+                                    <i class="fa fa-chevron-left"></i>
+                                    ادامه مطلب
+                                </a>
+                            </div>
+                        }
+                        else
+                        {
+
+                            foreach (var block in item.GetGroup("blocks"))
+                            {
+                                var blockHtml = Html.Raw(block.GetValue("content").Value.Replace("\r\n\r\n", "<br />").Replace("\n", "<br />"));
+                                var blockText =block.GetValue("content").Value;
+                                switch (block.GetValue("type.name").Value)
+                                {
+                                    case "h1":
+                                        <h1>@blockText</h1>
+                                        break;
+                                    case "h2":
+                                        <h1>@blockText</h1>
+                                        break;
+                                    case "h3":
+                                        <h1>@blockText</h1>
+                                        break;
+                                    case "b":
+                                        <b>@blockText</b>
+                                        break;
+                                    case "strong":
+                                        <strong>@blockText</strong>
+                                        break;
+                                    case "js":
+                                        <pre class="line-numbers"><code class="language-js">@blockText</code></pre>
+                                        break;
+                                    case "p":
+                                        <p>
+                                            @blockHtml
+                                        </p>
+                                        break;
+
+
+                                    default:
+                                        <div class="text">
+                                            @blockHtml
+                                        </div>
+                                        break;
+                                }
+                            }
+                        }
+                    </div>
+
+                }
+
+                @if (rows.Count() > pageSize && string.IsNullOrWhiteSpace(slug))
+                {
+                    var totalPages = Math.Ceiling((decimal)(rows.Count() / pageSize));
+
+                    <ul class="pagination">
+                        @if (currentPage > 1)
+                        {
+                            <li>
+                                <a href="/blog@(string.IsNullOrWhiteSpace(category)? "": "/" + category)/page/@(currentPage - 1)">«</a>
+                            </li>
+                        }
+
+                        @for (int i = 1; i <= totalPages; i++)
+                        {
+                            <li class="@(i == currentPage ? "active" : "" )">
+                                <span>@i</span>
+                            </li>
+
+                        }
+
+
+                        @if (currentPage < totalPages)
+                        {
+                            <li>
+                                <a href="/blog@(string.IsNullOrWhiteSpace(category)? "": "/" + category)/page/@(currentPage + 1)">»</a>
+                            </li>
+                        }
+
+                    </ul>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,148 @@
+﻿@using HCMS.Business
+@using HCMS.Business.Auth
+@using HCMS.Dynamics.Forms.Models
+@using HCMS.Dynamics.Data
+@using MoreLinq
+@using PagedList
+@{
+
+    var blog = DDB.GetTable("cms", "blog").DRows.OrderByDescending(p => p.RowID);
+
+}
+<footer>
+
+    <div class="blocks">
+
+        <div class="block">
+            <h5>
+                لینک‌های مفید
+            </h5>
+            <ul>
+                <li>
+                    <a href="">توافق‌نامه استفاده از خدمات</a>
+                </li>
+
+                <li>
+                    <a href="">نسخه‌ها و تعرفه‌ها</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="block github">
+            <h5>
+                پروژه‌های متن باز
+            </h5>
+
+
+            <ul>
+                <li>
+
+                    <a class="en" href="https://github.com/m-esm/serendip">
+                        <img src="~/Themes/serendip.agency/assets/svg/icon-github.svg" alt="">
+
+                        <div class="info">
+                            <b>Serendip</b>
+                            <br />
+                            A Node.js web service framework written in typescript.
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="en" href="https://github.com/m-esm/serendip-cms">
+                        <img src="~/Themes/serendip.agency/assets/svg/icon-github.svg" alt="">
+
+                        <div class="info">
+                            <b>Serendip-CMS</b>
+                            <br />
+                            [multi language , multi theme , modular , admin area ready] CMS written in c# asp,net mvc
+                        </div>
+                    </a>
+                </li>
+                <li>
+
+                    <a class="en" href="https://github.com/m-esm/serendip-host">
+                        <img src="~/Themes/serendip.agency/assets/svg/icon-github.svg" alt="">
+
+                        <div class="info">
+                            <b>Serendip-Host</b>
+                            <br />
+                            Hosting services and UI dashboard for managing multiple node application.
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="en" href="https://github.com/m-esm/serendip-utility">
+                        <img src="~/Themes/serendip.agency/assets/svg/icon-github.svg" alt="">
+                    
+                        <div class="info">
+                            <b>Serendip-Utility</b>
+                            <br />
+                            tool box for Javascript (+Typescript) programming - no dependency.
+                        </div>
+                    </a>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+
+
+        <div class="block">
+            <h5>
+                خبرنامه سرندیپ
+            </h5>
+            <p>
+                برای آگاهی از آخرین خبرهای سرندیپ می‌توانید عضو خبرنامه شوید.
+            </p>
+            <form action="">
+                <input type="email" dir="ltr" placeholder="آدرس ایمیل" />
+                <button>
+                    عضویت
+                </button>
+                <div class="clear"></div>
+            </form>
+            <ul class="socials">
+                <li>
+                    <a href="">
+                        <img src="~/Themes/serendip.agency/assets/svg/icon-linkedin.svg" alt="" />
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="~/Themes/serendip.agency/assets/svg/icon-facebook.svg" alt="" />
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="~/Themes/serendip.agency/assets/svg/icon-twitter.svg" alt="" />
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="~/Themes/serendip.agency/assets/svg/icon-instagram.svg" alt="" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+
+    <div class="copyleft">
+        <p class="en">
+            <span class="flip">
+                &copy;
+            </span>
+            <a href="https://en.wikipedia.org/wiki/Copyleft">Copyleft</a> 2018 Serendip Agency.
+        </p>
+    </div>
+</footer>

@@ -1,0 +1,39 @@
+﻿@using HCMS.Business
+@using HCMS.Business.Auth
+@using HCMS.Dynamics.Forms.Models
+@using HCMS.Dynamics.Data
+@using HCMS.Dynamics.Tools
+@using MoreLinq
+@using PagedList
+
+@{
+    var phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = phrases.CurrentCulture.CultureName();
+    string viewName = ViewContext.RouteData.Values["viewName"].ToString().ToLower();
+    Response.StatusCode = 404;
+}
+    <div class="box404">
+
+        <div class="title">
+            @( (404).ToPersianNumber()) 
+        </div>
+        <div class="description">
+            <p>
+                مطلب مورد نظر یافت نشد !
+            </p>
+            <div class="search">
+                <div data-form-validation="true">
+                    <form action="/blog" method="get">
+                        <input type="text" name="search" placeholder="جست و جو ..." class="form-control" required>
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <a href="~/" class="btn btn-sm btn-primary">
+                <i class="fa fa-home"></i>
+                بازگشت به خانه
+            </a>
+        </div>
+    </div>

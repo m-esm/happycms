@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+    var phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = phrases.CurrentCulture.CultureName();
+    string viewName = ViewContext.RouteData.Values["viewName"].ToString().ToLower();
+}
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta name="google-site-verification" content="mhPKwYo_ShPT9nGZzgip59wQeNWnUGU2dNyhcHnxBLs" />
+    <meta charset="utf-8" />
+    <title>
+        @ViewBag.title | هپی اسپایدر
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="theme-color" content="#132b2b" />
+
+    <link rel="shortcut icon" href="~/Themes/happy/img/brand/logo2.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    
+
+    <link href="~/Themes/happy/css/bundle.min.css?v=@DateTime.Now.ToString("yyyy-MM-dd")-@DateTime.Now.Hour" rel="stylesheet" />
+
+    
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+    </script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+    </script>
+    <![endif]-->
+
+    <base href="/" />
+
+    @RenderSection("styles", false)
+
+</head>
+<body>
+    <div id="top"></div>
+
+        @Html.Partial("_header")
+
+        @RenderBody()
+
+        @Html.Partial("_footer")
+
+
+    <script src="~/Themes/happy/js/bundle.min.js?v=@DateTime.Now.ToString("yyyy-MM-dd")-@DateTime.Now.Hour"></script>
+
+    @RenderSection("scripts", false)
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114653559-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114653559-1');
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿@model HCMS.Dynamics.Forms.Models.Form
+@{
+    var Phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = Phrases.CurrentCulture.CultureName();
+    ViewBag.title = Model.Caption + " " + Phrases.Get("Dashboard");
+    Layout = "~/SharedViews/Admin/_Layout.cshtml";
+
+    var rows = HCMS.Dynamics.Data.DDB.GetTable( Model.ID, Phrases.CurrentCulture.ID).DRows;
+
+}
+
+
+
+

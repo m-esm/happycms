@@ -1,0 +1,87 @@
+﻿#pricing {
+  text-align: center;
+  padding-bottom: 100px;
+}
+#pricing h1 {
+  font-size: 30px;
+  padding: 60px 0 20px 0;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+  max-width: 1030px;
+}
+#pricing .button {
+  box-sizing: border-box;
+}
+#pricing .button img {
+  display: block;
+  border-radius: 5px;
+}
+#pricing .notes {
+  max-width: 1030px;
+  margin: 60px auto;
+}
+#pricing .notes p {
+  padding: 5px;
+  text-align: start;
+}
+#pricing .blocks .block {
+  width: 320px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin: 15px;
+}
+#pricing .blocks .block .inner {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+#pricing .blocks .block .title {
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 10px;
+}
+#pricing .blocks .block .base {
+  font-size: 15px;
+  line-height: 22px;
+  border-bottom: 3px solid #333;
+  width: 240px;
+  margin: 0 auto;
+  padding: 20px 0;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+#pricing .blocks .block .base .half {
+  height: 11px;
+}
+#pricing .blocks .block ul {
+  padding: 0 10px;
+}
+#pricing .blocks .block ul li {
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 0;
+}
+#pricing .blocks .block ul li .half {
+  height: 11px;
+}
+#pricing .blocks .block ul li b {
+  font-size: 15px;
+}
+#pricing .blocks .block ul li:last-child {
+  border-bottom: none;
+}
+@media (max-width: 1024px) {
+  #pricing {
+    padding-bottom: 30px;
+  }
+  #pricing h1 {
+    font-size: 19px;
+  }
+  #pricing .notes {
+    margin: 0;
+    padding: 15px;
+  }
+}

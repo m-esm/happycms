@@ -1,0 +1,105 @@
+﻿@{
+    Layout = null;
+    var phrases = (HCMS.Dynamics.Localization.Phrases)ViewBag.Phrases;
+    var cc = phrases.CurrentCulture.CultureName();
+    string viewName = ViewContext.RouteData.Values["viewName"].ToString().ToLower();
+    var v = DateTime.Now.Ticks;
+}
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta name="google-site-verification" content="mhPKwYo_ShPT9nGZzgip59wQeNWnUGU2dNyhcHnxBLs" />
+    <meta charset="utf-8" />
+    <title>
+        @ViewBag.title | سرندیپ
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="theme-color" content="#d2ae6d" />
+
+    <link rel="shortcut icon" href="~/Themes/serendip.agency/assets/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    
+    <base href="~/" />
+    <link href="~/Themes/serendip.agency/assets/reset.min.css?v=@v" rel="stylesheet" />
+    <link href="~/Themes/serendip.agency/assets/styles.min.css?v=@v" rel="stylesheet" />
+    <link href="~/Themes/serendip.agency/assets/home.min.css?v=@v" rel="stylesheet" />
+    <link href="~/Themes/serendip.agency/assets/pricing.min.css?v=@v" rel="stylesheet" />
+    <link href="~/Themes/serendip.agency/assets/features.min.css?v=@v" rel="stylesheet" />
+    
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+    </script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+    </script>
+    <![endif]-->
+
+    <base href="/" />
+
+    @RenderSection("styles", false)
+
+</head>
+<body>
+
+
+    <div id="under-construction">
+        <div class="inner">
+            <div class="icon">
+                <img src="~/Themes/serendip.agency/assets/svg/dashboard.svg" alt="">
+            </div>
+            <div class="text">در دست ساخت</div>
+            <p>
+                برای مشاهده روند کار کلیک کنید.
+            </p>
+        </div>
+    </div>
+
+    <div id="app" class="disable">
+
+        <div id="top"></div>
+
+
+        @Html.Partial("_header")
+        @Html.Partial("_nav")
+
+
+        <div id="router">
+            @RenderBody()
+
+
+        </div>
+
+        @Html.Partial("_footer")
+
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    </div>
+
+    @RenderSection("scripts", false)
+
+
+    <script>
+
+    document.getElementById("under-construction").addEventListener("click", function () {
+
+      this.hidden = true;
+      document.getElementById("app").classList.remove("disable");
+
+    });
+    document.getElementById("nav-toggle").addEventListener("click", function () {
+        document.getElementById("nav").classList.toggle('active');
+        document.getElementById("nav-toggle").classList.toggle('active');
+
+    });
+
+
+
+    </script>
+
+</body>
+</html>

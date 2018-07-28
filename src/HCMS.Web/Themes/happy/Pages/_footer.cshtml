@@ -1,0 +1,89 @@
+﻿@using HCMS.Business
+@using HCMS.Business.Auth
+@using HCMS.Dynamics.Forms.Models
+@using HCMS.Dynamics.Data
+@using MoreLinq
+@using PagedList
+@{
+
+    var blog = DDB.GetTable("cms", "blog").DRows.OrderByDescending(p => p.RowID);
+
+}
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 block">
+                <div class="title">
+                    <i class="fa fa-cubes"></i>
+                    آخرین نرم افزارها 
+                </div>
+                <ul>
+                    @foreach (var item in blog.Where(p => p.GetValue("category.name").Value == "نرم افزار").Take(4))
+                    {
+                        <li>
+                            <a href="/blog/@item.GetValue("slug")">@item.GetValue("title")</a>
+                        </li>
+                    }
+
+
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 block">
+                <div class="title">
+                    <i class="fa fa-book"></i>
+                    آخرین آموزش ها
+                </div>
+
+                    <ul>
+                        @foreach (var item in blog.Where(p => p.GetValue("category.name").Value == "آموزش").Take(4))
+                        {
+                            <li>
+                                <a href="/blog/@item.GetValue("slug")">@item.GetValue("title")</a>
+                            </li>
+                        }
+
+                    </ul>
+                </div>
+     
+            <div class="col-md-3 col-sm-6 block">
+                <div class="title">
+                    <i class="fa fa-file-text"></i>
+
+                    آخرین مقالات
+                </div>
+                    <ul>
+                        @foreach (var item in blog.Where(p => p.GetValue("category.name").Value == "مقالات").Take(4))
+                        {
+                            <li>
+                                <a href="/blog/@item.GetValue("slug")">@item.GetValue("title")</a>
+                            </li>
+                        }
+
+
+                    </ul>
+                </div>
+            <div class="col-md-3 col-sm-6 block">
+                <div class="title">
+                    <i class="fa fa-at"></i>
+                    عضویت در خبرنامه
+                </div>
+                <div class="footer subscribe">
+                    <form action="/subscribe" method="post" target="_blank" >
+                        <input type="email" value="" name="email" dir="ltr" placeholder="your@email.com" class="form-control" required>
+                        <button type="submit">
+                            <i class="fa fa-send"></i>
+                            عضویت
+                        </button>
+                    </form>
+                </div>
+           
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="backToTop" class="clicked">
+        <i class="fa fa-angle-up">
+        </i>
+</div>

@@ -1,0 +1,614 @@
+﻿/* You can add global styles to this file, and also import other style files */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'XEROSANS-BLACK';
+  src: url('fonts/XEROSANS-BLACK.woff') format('woff');
+}
+/**
+*
+*	Name:			IRANYekan Font
+*	Version:		1.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 20, 2016
+*	Updated on:		Dec 20, 2016
+*	Website:		http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت ایران یکان یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRANYekan fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+--------------------------------------------------------------------------------------
+*	
+**/
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/iranyekanwebbold.eot');
+  src: url('fonts/iranyekanwebbold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('fonts/iranyekanwebbold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('fonts/iranyekanwebbold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('fonts/iranyekanwebbold.ttf') format('truetype');
+}
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/iranyekanweblight.eot');
+  src: url('fonts/iranyekanweblight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('fonts/iranyekanweblight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('fonts/iranyekanweblight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('fonts/iranyekanweblight.ttf') format('truetype');
+}
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/iranyekanwebregular.eot');
+  src: url('fonts/iranyekanwebregular.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('fonts/iranyekanwebregular.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('fonts/iranyekanwebregular.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('fonts/iranyekanwebregular.ttf') format('truetype');
+}
+body {
+  font-family: iranyekan;
+}
+#app {
+  background: #fff;
+  transition: all ease .5s;
+  transform-origin: center top;
+}
+#app.disable {
+  transform: scale(0.5);
+  filter: grayscale() blur(6px);
+  transition: none;
+}
+#under-construction {
+  cursor: pointer;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  line-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  text-align: center;
+}
+#under-construction .inner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
+  opacity: .8;
+}
+#under-construction .inner .icon img {
+  width: 200px;
+}
+#under-construction .inner .text {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 100;
+}
+#under-construction .inner p {
+  padding: 30px 15px;
+  font-size: 20px;
+  font-weight: 900;
+}
+b {
+  font-weight: bold;
+}
+.en {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+b .en {
+  font-weight: bold;
+}
+input,
+button,
+textarea,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: iranyekan;
+  font-weight: normal;
+}
+input .en,
+button .en,
+textarea .en,
+label .en,
+h1 .en,
+h2 .en,
+h3 .en,
+h4 .en,
+h5 .en,
+h6 .en {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-weight: bold;
+}
+body {
+  direction: rtl;
+  font-size: 17px;
+  max-width: 100vw;
+  overflow-x: hidden;
+  line-height: 30px;
+}
+#nav-toggle {
+  position: relative;
+}
+#nav-toggle img.i2 {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#nav-toggle img {
+  transition: all ease 0.3s;
+}
+#nav-toggle.active img.i1 {
+  opacity: 0;
+}
+#nav-toggle.active img.i2 {
+  opacity: 1;
+}
+nav {
+  overflow: hidden;
+  z-index: 9998;
+  transition: right ease .5s;
+  display: block;
+  box-sizing: border-box;
+  position: fixed;
+  background: #fff;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+  top: 60px;
+  height: 100%;
+  width: 300px;
+  right: -300px;
+  overflow-y: auto;
+  content: ' ';
+  padding-top: 15px;
+}
+nav ul li {
+  line-height: 50px;
+  padding: 0 30px;
+  display: block;
+}
+nav ul li a {
+  border-bottom: 1px dashed #ccc;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  color: #333;
+}
+nav ul li a .icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: .5;
+}
+nav ul li a .badge {
+  font-size: 11px;
+  float: left;
+  color: #777;
+  font-style: italic;
+}
+nav ul li a:after {
+  clear: both;
+}
+nav.active {
+  right: 0;
+}
+.clear {
+  clear: both;
+  display: block;
+  content: ' ';
+}
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border: none;
+  padding: none;
+  background: none;
+  outline: none;
+  cursor: move;
+}
+::-webkit-scrollbar-track {
+  border: none;
+  padding: none;
+  outline: none;
+  background: #E9C795;
+}
+::-webkit-scrollbar-thumb {
+  border: none;
+  padding: none;
+  outline: none;
+  background: #D2AE6D;
+}
+#router {
+  padding-top: 60px;
+}
+header {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  height: 60px;
+  overflow: hidden;
+}
+header .logo {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+}
+header .logo img {
+  height: 100%;
+}
+header .icons {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  height: 40px;
+  overflow: hidden;
+}
+header .icons .search,
+header .icons .account,
+header .icons .menu {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+header .icons .search img,
+header .icons .account img,
+header .icons .menu img {
+  height: 100%;
+}
+#tos {
+  text-align: center;
+  padding-bottom: 120px;
+}
+#tos h1 {
+  font-weight: bold;
+  padding: 80px 0 20px 0;
+  margin-bottom: 45px;
+  font-size: 30px;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+}
+#tos h2 {
+  font-weight: bold;
+  font-size: 19px;
+  margin: 45px 0 0 0;
+}
+#tos p {
+  padding: 5px 0;
+}
+#tos .content {
+  text-align: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+#tos .content p {
+  text-align: justify;
+}
+#tos .content a {
+  border-bottom: 1px solid #6d87c4;
+  color: #6d87c4;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer {
+  border-top: 1px solid #ccc;
+  padding: 30px 0 0 0;
+}
+footer .en {
+  direction: ltr;
+}
+footer .copyleft {
+  letter-spacing: 2px;
+  text-align: center;
+}
+footer .copyleft .flip {
+  transform: rotateY(180deg);
+  display: inline-block;
+  font-size: 16px;
+}
+footer .copyleft a {
+  color: #6d87c4;
+  text-decoration: none;
+}
+footer .blocks {
+  padding-bottom: 30px;
+  text-align: center;
+}
+footer .blocks .block {
+  text-align: right;
+  vertical-align: top;
+  display: inline-block;
+  min-height: 200px;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 33.3333%;
+  float: right;
+}
+footer .blocks .block.github ul {
+  direction: ltr;
+  text-align: left;
+  padding-top: 20px;
+}
+footer .blocks .block.github ul li {
+  line-height: 16px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+footer .blocks .block.github ul li img {
+  float: left;
+  vertical-align: top;
+}
+footer .blocks .block.github ul li .info {
+  height: 60px;
+  float: left;
+  vertical-align: top;
+  width: calc(100% - 40px);
+}
+footer h5 {
+  font-size: 19px;
+  line-height: 40px;
+  border-right: 1px solid #6d83b8;
+  padding: 0 30px;
+  font-weight: bold;
+}
+footer p {
+  padding: 15px 30px;
+  font-size: 13px;
+  line-height: 22px;
+}
+footer ul {
+  padding-right: 30px;
+}
+footer ul li {
+  display: block;
+  line-height: 26px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #273a68;
+  font-size: 13px;
+}
+footer ul li a img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  float: left;
+  margin: 0 5px;
+}
+footer ul li a:after {
+  clear: both;
+  content: ' ';
+  display: block;
+}
+footer ul li:after {
+  clear: both;
+  content: ' ';
+  display: block;
+}
+footer form {
+  padding: 0 30px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+footer form input {
+  border: 1px solid #6d83b8;
+  padding: 0 10px;
+  box-sizing: border-box;
+  float: left;
+  width: calc(100% - 100px);
+  border-radius: 5px 0 0 5px;
+  height: 40px;
+}
+footer form button {
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  background: #6d83b8;
+  border: 1px solid #6d83b8;
+  width: 100px;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  box-sizing: border-box;
+}
+footer ul.socials {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer ul.socials:after {
+  display: block;
+  clear: both;
+  content: ' ';
+}
+footer ul.socials li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 13px;
+    line-height: 26px;
+  }
+  footer {
+    padding-top: 15px;
+  }
+  footer .blocks {
+    padding-bottom: 0;
+  }
+  footer p {
+    padding: 15px;
+  }
+  footer form {
+    padding: 15px;
+  }
+  footer ul,
+  footer h5 {
+    padding: 0;
+    padding-right: 15px;
+  }
+  footer .blocks .block {
+    overflow: hidden;
+    width: 100%;
+    float: none;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
