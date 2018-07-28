@@ -5,7 +5,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\ME\Desktop\new_publish</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\ME\Desktop\serendip-cms-dist</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Areas/Manage/Views/Auth/ConfirmEmail.cshtml">
@@ -204,7 +204,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/17/2017 21:45:47</publishTime>
     </File>
     <File Include="Areas/Manage/Views/Themes/Index.cshtml">
-      <publishTime>01/17/2017 21:45:47</publishTime>
+      <publishTime>07/22/2018 21:12:26</publishTime>
     </File>
     <File Include="Areas/Manage/Views/Update/Index.cshtml">
       <publishTime>01/17/2017 21:45:47</publishTime>
@@ -270,13 +270,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/17/2017 21:45:54</publishTime>
     </File>
     <File Include="bin/HCMS.Business.dll">
-      <publishTime>05/22/2018 05:41:14</publishTime>
+      <publishTime>07/24/2018 04:29:17</publishTime>
     </File>
     <File Include="bin/HCMS.Data.dll">
-      <publishTime>05/22/2018 05:41:14</publishTime>
+      <publishTime>07/24/2018 04:29:17</publishTime>
     </File>
     <File Include="bin/HCMS.Dynamics.dll">
-      <publishTime>05/22/2018 05:41:15</publishTime>
+      <publishTime>07/24/2018 04:29:17</publishTime>
     </File>
     <File Include="bin/HCMS.Messaging.dll">
       <publishTime>12/10/2016 05:20:09</publishTime>
@@ -285,7 +285,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/23/2017 04:41:53</publishTime>
     </File>
     <File Include="bin/HCMS.Security.dll">
-      <publishTime>06/20/2018 12:00:24</publishTime>
+      <publishTime>07/24/2018 04:29:18</publishTime>
     </File>
     <File Include="bin/HCMS.UiBuilder.dll">
       <publishTime>10/23/2017 04:41:52</publishTime>
@@ -294,7 +294,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/23/2017 04:41:53</publishTime>
     </File>
     <File Include="bin/HCMS.Web.dll">
-      <publishTime>06/20/2018 12:00:25</publishTime>
+      <publishTime>07/24/2018 04:29:18</publishTime>
     </File>
     <File Include="bin/ImageResizer.dll">
       <publishTime>09/26/2016 13:19:20</publishTime>
@@ -3843,16 +3843,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/17/2017 21:45:48</publishTime>
     </File>
     <File Include="Packages/melon/css/HappyStyle.css">
-      <publishTime>03/01/2018 08:47:00</publishTime>
+      <publishTime>07/22/2018 21:43:29</publishTime>
     </File>
     <File Include="Packages/melon/css/HappyStyle.css.map">
       <publishTime>01/17/2017 21:45:48</publishTime>
     </File>
     <File Include="Packages/melon/css/HappyStyle.less">
-      <publishTime>03/01/2018 08:46:59</publishTime>
+      <publishTime>07/22/2018 21:43:28</publishTime>
     </File>
     <File Include="Packages/melon/css/HappyStyle.min.css">
-      <publishTime>03/01/2018 08:47:00</publishTime>
+      <publishTime>07/22/2018 21:43:29</publishTime>
     </File>
     <File Include="Packages/melon/css/HappyStyle.min.css.gzip">
       <publishTime>01/17/2017 21:45:48</publishTime>
@@ -3882,10 +3882,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/28/2018 16:50:39</publishTime>
     </File>
     <File Include="Packages/melon/css/main.css">
-      <publishTime>03/01/2018 09:02:22</publishTime>
+      <publishTime>07/22/2018 21:15:55</publishTime>
     </File>
     <File Include="Packages/melon/css/main.min.css">
-      <publishTime>03/01/2018 09:02:23</publishTime>
+      <publishTime>07/22/2018 21:15:55</publishTime>
     </File>
     <File Include="Packages/melon/css/plugins.css">
       <publishTime>01/17/2017 21:45:48</publishTime>
@@ -3894,7 +3894,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/17/2017 21:45:48</publishTime>
     </File>
     <File Include="Packages/melon/css/responsive.css">
-      <publishTime>02/24/2018 06:00:09</publishTime>
+      <publishTime>07/22/2018 21:09:16</publishTime>
     </File>
     <File Include="Packages/melon/css/responsive.min.css">
       <publishTime>01/17/2017 21:45:48</publishTime>
@@ -6711,7 +6711,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/17/2017 21:45:49</publishTime>
     </File>
     <File Include="SharedViews/Account/Login.cshtml">
-      <publishTime>05/22/2018 18:56:54</publishTime>
+      <publishTime>07/23/2018 00:07:12</publishTime>
     </File>
     <File Include="SharedViews/Account/ResetPassword.cshtml">
       <publishTime>01/17/2017 21:45:49</publishTime>
@@ -6756,7 +6756,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/17/2017 21:45:49</publishTime>
     </File>
     <File Include="SharedViews/Admin/_Layout.cshtml">
-      <publishTime>02/24/2018 05:54:54</publishTime>
+      <publishTime>07/23/2018 00:43:50</publishTime>
     </File>
     <File Include="SharedViews/Admin/_LoginPartial.cshtml">
       <publishTime>01/17/2017 21:45:49</publishTime>
@@ -7051,6 +7051,573 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Themes/Agency/_Layout.cshtml">
       <publishTime>09/26/2016 13:18:44</publishTime>
+    </File>
+    <File Include="Themes/Anzim/consultants.json">
+      <publishTime>07/10/2018 09:54:51</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/custom.css">
+      <publishTime>07/13/2018 10:57:39</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/custom.less">
+      <publishTime>07/13/2018 10:57:39</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/custom.min.css">
+      <publishTime>07/13/2018 10:57:39</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/rtl.css">
+      <publishTime>03/01/2017 05:30:41</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/rtl.less">
+      <publishTime>02/26/2017 02:17:46</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/rtl.min.css">
+      <publishTime>02/26/2017 02:17:48</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/skins/skin-digital-agency.css">
+      <publishTime>07/03/2018 03:55:30</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/theme-blog.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/theme-elements.css">
+      <publishTime>07/03/2018 03:23:39</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/theme-shop.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/theme.css">
+      <publishTime>07/03/2018 03:51:35</publishTime>
+    </File>
+    <File Include="Themes/Anzim/css/theme.min.css">
+      <publishTime>07/03/2018 03:51:35</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/apple-touch-icon.png">
+      <publishTime>02/01/2017 09:48:12</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/banners/azmoon.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/banners/blog.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/banners/contact.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/banners/coop.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/banners/faq.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/banners/fruit.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/banners/whyus.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/degree-1.jpg">
+      <publishTime>03/01/2017 05:25:58</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/degree-2.jpg">
+      <publishTime>03/01/2017 05:26:39</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/degree-3.jpg">
+      <publishTime>03/01/2017 05:26:21</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/degrees/3vom.jpg">
+      <publishTime>02/23/2017 08:47:53</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/degrees/6om.jpg">
+      <publishTime>02/23/2017 08:47:53</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/degrees/9om.jpg">
+      <publishTime>02/23/2017 08:47:53</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/degrees/konkoor.jpg">
+      <publishTime>02/23/2017 08:47:53</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/favicon.png">
+      <publishTime>06/20/2018 07:49:14</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/logo.png">
+      <publishTime>03/01/2017 02:50:53</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/news-bg.jpg">
+      <publishTime>02/24/2017 07:52:06</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/patterns/stripes.png">
+      <publishTime>02/18/2017 09:10:55</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/previews/areas/content-5.png">
+      <publishTime>02/01/2017 09:53:54</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/previews/areas/content-7.png">
+      <publishTime>02/01/2017 09:53:53</publishTime>
+    </File>
+    <File Include="Themes/Anzim/img/slides/slide-corporate-6.jpg">
+      <publishTime>02/01/2017 09:51:47</publishTime>
+    </File>
+    <File Include="Themes/Anzim/js/custom.js">
+      <publishTime>07/03/2018 04:15:09</publishTime>
+    </File>
+    <File Include="Themes/Anzim/js/theme.init.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/Anzim/js/theme.js">
+      <publishTime>03/01/2017 04:26:51</publishTime>
+    </File>
+    <File Include="Themes/Anzim/js/views/view.contact.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/master/analytics/analytics.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/master/style-switcher/style.switcher.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/Anzim/master/style-switcher/style.switcher.localstorage.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/contact.cshtml">
+      <publishTime>11/12/2017 04:06:54</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/coop.cshtml">
+      <publishTime>03/04/2017 14:04:41</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/degrees.cshtml">
+      <publishTime>03/01/2017 03:38:38</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/faq.cshtml">
+      <publishTime>03/01/2017 03:38:12</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/home.cshtml">
+      <publishTime>07/18/2018 18:37:39</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/import.cshtml">
+      <publishTime>07/10/2018 11:11:01</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/post.cshtml">
+      <publishTime>03/05/2017 13:32:54</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/weblog.cshtml">
+      <publishTime>03/05/2017 14:42:45</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/whyus.cshtml">
+      <publishTime>07/10/2018 11:21:42</publishTime>
+    </File>
+    <File Include="Themes/Anzim/Pages/_blog_sidebar.cshtml">
+      <publishTime>03/05/2017 13:25:39</publishTime>
+    </File>
+    <File Include="Themes/Anzim/preview.png">
+      <publishTime>07/22/2018 21:21:35</publishTime>
+    </File>
+    <File Include="Themes/Anzim/theme.xml">
+      <publishTime>03/04/2017 11:50:40</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/animate/animate.min.css">
+      <publishTime>02/01/2017 09:48:48</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/bootstrap/css/bootstrap.min.css">
+      <publishTime>02/01/2017 09:52:12</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/bootstrap/js/bootstrap.min.js">
+      <publishTime>02/18/2017 06:48:29</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/common/common.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/font-awesome/css/font-awesome.min.css">
+      <publishTime>02/01/2017 09:52:31</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>02/18/2017 09:09:01</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>02/18/2017 09:09:15</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/font-awesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>02/18/2017 09:09:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/isotope/jquery.isotope.min.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/jquery-cookie/jquery-cookie.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/jquery.appear/jquery.appear.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/jquery.easing/jquery.easing.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/jquery.gmap/jquery.gmap.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/jquery.lazyload/jquery.lazyload.min.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/jquery.validation/jquery.validation.min.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/jquery/jquery.min.js">
+      <publishTime>02/18/2017 06:48:29</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/magnific-popup/jquery.magnific-popup.min.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/magnific-popup/magnific-popup.min.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/modernizr/modernizr.min.js">
+      <publishTime>02/18/2017 06:48:29</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/owl.carousel/assets/owl.carousel.min.css">
+      <publishTime>02/01/2017 09:52:47</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/owl.carousel/assets/owl.theme.default.min.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/owl.carousel/owl.carousel.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/rs-plugin/css/layers.css">
+      <publishTime>02/01/2017 09:52:57</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/rs-plugin/css/navigation.css">
+      <publishTime>02/18/2017 06:48:30</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/rs-plugin/css/settings.css">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/rs-plugin/fonts/revicons/revicons.ttf">
+      <publishTime>02/18/2017 09:06:07</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/rs-plugin/fonts/revicons/revicons.woff">
+      <publishTime>02/18/2017 09:06:55</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js">
+      <publishTime>02/18/2017 06:48:31</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/rs-plugin/js/jquery.themepunch.tools.min.js">
+      <publishTime>02/18/2017 06:48:29</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/simple-line-icons/css/simple-line-icons.min.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/simple-line-icons/fonts/Simple-Line-Icons.ttf">
+      <publishTime>02/18/2017 09:08:12</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff">
+      <publishTime>02/18/2017 09:07:53</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff2">
+      <publishTime>02/18/2017 09:08:33</publishTime>
+    </File>
+    <File Include="Themes/Anzim/vendor/vide/vide.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/Anzim/_Layout.cshtml">
+      <publishTime>07/13/2018 10:51:07</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/custom.css">
+      <publishTime>07/03/2018 05:33:43</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/custom.less">
+      <publishTime>07/03/2018 05:33:47</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/custom.min.css">
+      <publishTime>07/03/2018 05:33:43</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/rtl.css">
+      <publishTime>03/01/2017 05:30:41</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/rtl.less">
+      <publishTime>02/26/2017 02:17:46</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/rtl.min.css">
+      <publishTime>02/26/2017 02:17:48</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/skins/skin-digital-agency.css">
+      <publishTime>07/03/2018 03:55:30</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/theme-blog.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/theme-elements.css">
+      <publishTime>07/03/2018 03:23:39</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/theme-shop.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/theme.css">
+      <publishTime>07/03/2018 03:51:35</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/css/theme.min.css">
+      <publishTime>07/03/2018 03:51:35</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/apple-touch-icon.png">
+      <publishTime>02/01/2017 09:48:12</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/banners/azmoon.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/banners/blog.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/banners/contact.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/banners/coop.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/banners/faq.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/banners/fruit.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/banners/whyus.jpg">
+      <publishTime>03/01/2017 04:02:30</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/degree-1.jpg">
+      <publishTime>03/01/2017 05:25:58</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/degree-2.jpg">
+      <publishTime>03/01/2017 05:26:39</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/degree-3.jpg">
+      <publishTime>03/01/2017 05:26:21</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/degrees/3vom.jpg">
+      <publishTime>02/23/2017 08:47:53</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/degrees/6om.jpg">
+      <publishTime>02/23/2017 08:47:53</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/degrees/9om.jpg">
+      <publishTime>02/23/2017 08:47:53</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/degrees/konkoor.jpg">
+      <publishTime>02/23/2017 08:47:53</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/favicon.png">
+      <publishTime>06/20/2018 07:49:14</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/logo.png">
+      <publishTime>03/01/2017 02:50:53</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/news-bg.jpg">
+      <publishTime>02/24/2017 07:52:06</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/patterns/stripes.png">
+      <publishTime>02/18/2017 09:10:55</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/previews/areas/content-5.png">
+      <publishTime>02/01/2017 09:53:54</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/previews/areas/content-7.png">
+      <publishTime>02/01/2017 09:53:53</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/img/slides/slide-corporate-6.jpg">
+      <publishTime>02/01/2017 09:51:47</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/js/custom.js">
+      <publishTime>07/03/2018 04:15:09</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/js/theme.init.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/js/theme.js">
+      <publishTime>03/01/2017 04:26:51</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/js/views/view.contact.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/master/analytics/analytics.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/master/style-switcher/style.switcher.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/master/style-switcher/style.switcher.localstorage.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/blog_api.cshtml">
+      <publishTime>07/03/2018 04:58:17</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/contact.cshtml">
+      <publishTime>11/12/2017 04:06:54</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/coop.cshtml">
+      <publishTime>03/04/2017 14:04:41</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/degrees.cshtml">
+      <publishTime>03/01/2017 03:38:38</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/faq.cshtml">
+      <publishTime>03/01/2017 03:38:12</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/home.cshtml">
+      <publishTime>03/05/2017 14:35:45</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/post.cshtml">
+      <publishTime>03/05/2017 13:32:54</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/weblog.cshtml">
+      <publishTime>03/05/2017 14:42:45</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/whyus.cshtml">
+      <publishTime>03/01/2017 05:04:15</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/Pages/_blog_sidebar.cshtml">
+      <publishTime>03/05/2017 13:25:39</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/preview.png">
+      <publishTime>03/04/2017 11:50:29</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/theme.xml">
+      <publishTime>07/10/2018 05:52:51</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/animate/animate.min.css">
+      <publishTime>02/01/2017 09:48:48</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/bootstrap/css/bootstrap.min.css">
+      <publishTime>02/01/2017 09:52:12</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>01/17/2017 21:45:48</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/bootstrap/js/bootstrap.min.js">
+      <publishTime>02/18/2017 06:48:29</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/common/common.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/font-awesome/css/font-awesome.min.css">
+      <publishTime>02/01/2017 09:52:31</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>02/18/2017 09:09:01</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>02/18/2017 09:09:15</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/font-awesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>02/18/2017 09:09:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/isotope/jquery.isotope.min.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/jquery-cookie/jquery-cookie.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/jquery.appear/jquery.appear.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/jquery.easing/jquery.easing.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/jquery.gmap/jquery.gmap.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/jquery.lazyload/jquery.lazyload.min.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/jquery.validation/jquery.validation.min.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/jquery/jquery.min.js">
+      <publishTime>02/18/2017 06:48:29</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/magnific-popup/jquery.magnific-popup.min.js">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/magnific-popup/magnific-popup.min.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/modernizr/modernizr.min.js">
+      <publishTime>02/18/2017 06:48:29</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/owl.carousel/assets/owl.carousel.min.css">
+      <publishTime>02/01/2017 09:52:47</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/owl.carousel/assets/owl.theme.default.min.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/owl.carousel/owl.carousel.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/rs-plugin/css/layers.css">
+      <publishTime>02/01/2017 09:52:57</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/rs-plugin/css/navigation.css">
+      <publishTime>02/18/2017 06:48:30</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/rs-plugin/css/settings.css">
+      <publishTime>02/18/2017 06:48:28</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/rs-plugin/fonts/revicons/revicons.ttf">
+      <publishTime>02/18/2017 09:06:07</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/rs-plugin/fonts/revicons/revicons.woff">
+      <publishTime>02/18/2017 09:06:55</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js">
+      <publishTime>02/18/2017 06:48:31</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/rs-plugin/js/jquery.themepunch.tools.min.js">
+      <publishTime>02/18/2017 06:48:29</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/simple-line-icons/css/simple-line-icons.min.css">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/simple-line-icons/fonts/Simple-Line-Icons.ttf">
+      <publishTime>02/18/2017 09:08:12</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff">
+      <publishTime>02/18/2017 09:07:53</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff2">
+      <publishTime>02/18/2017 09:08:33</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/vendor/vide/vide.min.js">
+      <publishTime>02/18/2017 06:48:27</publishTime>
+    </File>
+    <File Include="Themes/AnzimAzmoon/_Layout.cshtml">
+      <publishTime>07/10/2018 05:53:23</publishTime>
     </File>
     <File Include="Themes/ARXE_ASC/Content/ARXE.ASC.css">
       <publishTime>11/02/2017 02:17:15</publishTime>
@@ -11648,6 +12215,483 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Themes/REINHOLD/_Layout.cshtml">
       <publishTime>09/26/2016 13:19:06</publishTime>
     </File>
+    <File Include="Themes/serendip.agency/assets/features.css">
+      <publishTime>07/22/2018 04:45:40</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/features.less">
+      <publishTime>07/22/2018 04:53:09</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/features.min.css">
+      <publishTime>07/22/2018 04:45:40</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fn.js">
+      <publishTime>07/22/2018 04:43:34</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/FontLicense.txt">
+      <publishTime>07/21/2018 15:07:10</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebbold.eot">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebbold.svg">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebbold.ttf">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebbold.woff">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebbold.woff2">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanweblight.eot">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanweblight.svg">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanweblight.ttf">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanweblight.woff">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanweblight.woff2">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebregular.eot">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebregular.svg">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebregular.ttf">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebregular.woff">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/iranyekanwebregular.woff2">
+      <publishTime>06/01/2018 19:42:12</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/XEROSANS-BLACK.woff">
+      <publishTime>04/18/2018 22:03:59</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/fonts/XEROSANS-BOLD.woff">
+      <publishTime>04/18/2018 22:04:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/home.css">
+      <publishTime>07/24/2018 04:20:20</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/home.less">
+      <publishTime>07/24/2018 04:20:19</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/home.min.css">
+      <publishTime>07/24/2018 04:20:20</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/pricing.css">
+      <publishTime>07/24/2018 02:21:03</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/pricing.less">
+      <publishTime>07/24/2018 02:21:03</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/pricing.min.css">
+      <publishTime>07/24/2018 02:21:03</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/reset.css">
+      <publishTime>07/22/2018 04:45:18</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/reset.less">
+      <publishTime>05/30/2018 16:10:10</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/reset.min.css">
+      <publishTime>07/22/2018 04:45:18</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/styles.css">
+      <publishTime>07/24/2018 04:22:58</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/styles.less">
+      <publishTime>07/24/2018 04:22:58</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/styles.min.css">
+      <publishTime>07/24/2018 04:22:58</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/3rd-person-integrations-weather-calendar.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/agreement-1.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1-background.svg">
+      <publishTime>07/20/2018 16:42:03</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1-main-icon-monogram.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1-planet-big.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1-planet-giant.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1-planet-medium.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1-planet-small.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1-planet-textureless-big.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1-planet-textureless-small.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1-text.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-1.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-2-crm-integrations.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-3-400-hieght-1920-width.svg">
+      <publishTime>06/28/2018 23:10:18</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-3-target-goals-background.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-3-target-goals-objects.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/astronaut-3-target-goals.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/blog.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/brochure-1.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-a.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-b.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-c.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-d.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-e.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-f.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-g.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-h.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-i.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-j.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-k.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-l.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-m.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-n.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-o.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/capability-p.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/cloud.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/comments.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/contact.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/crm-serendip-employees-reg.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/crm-serendip-employees-wide.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/crm-serendip-employees.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/crm-serendip-with-text-medium.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/crm-serendip-with-text-wide.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/customer-a.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/customer-b.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/customer-c.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/customer-d.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/customer-e.svg">
+      <publishTime>07/20/2018 18:25:21</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/customer-f.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/customization.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/dashboard.svg">
+      <publishTime>07/20/2018 13:03:27</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/enterprise-box-c.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/enterprise-subscribe-button-b.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/faq.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-a.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-b.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-c.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-d.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-e.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-f.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-g.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-h.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-i.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-j.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-k.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-l.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-m.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/feature-n.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/features.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/free-box-c.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/free-crm-background.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/free-crm-pig-and-coins.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/free-crm-serendip-monogram.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/free-crm.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/free-subscribe-button-b.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-business-growth.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-contact-form.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-efficiency.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-facebook.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-github.svg">
+      <publishTime>07/20/2018 15:00:43</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-header-menu-bar.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-header-search.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-instagram.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-integrations.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-linkedin.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/icon-twitter.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/intro.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/links.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/local.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/logo-main.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/menu-bar.svg">
+      <publishTime>07/20/2018 15:00:43</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/newsletter.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/pricing.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/pro-box-c.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/pro-subscribe-b.svg">
+      <publishTime>06/08/2018 00:08:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/pwa-technology-background.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/pwa-technology.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/quotation-marks-jeff-bezos.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/search.svg">
+      <publishTime>07/20/2018 15:00:43</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/security-safety.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/serendip-crm-integrations-functions.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/serendip-mobile-app-background.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/serendip-mobile-app-objects-os.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/serendip-mobile-app-objects-planets.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/serendip-mobile-app-objects.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/serendip-mobile-app.svg">
+      <publishTime>06/02/2018 00:43:11</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/serendip-mobile-without-back-long.svg">
+      <publishTime>06/28/2018 23:10:18</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/sign-in.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/smart-phone.svg">
+      <publishTime>05/30/2018 11:42:28</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/user-area.svg">
+      <publishTime>07/20/2018 21:16:05</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/assets/svg/user.svg">
+      <publishTime>07/20/2018 15:00:43</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/404.cshtml">
+      <publishTime>07/22/2018 04:18:48</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/blog.cshtml">
+      <publishTime>07/22/2018 04:18:48</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/features.cshtml">
+      <publishTime>07/22/2018 05:19:04</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/home.cshtml">
+      <publishTime>07/24/2018 04:25:35</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/pricing.cshtml">
+      <publishTime>07/22/2018 05:36:35</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/sitemap.cshtml">
+      <publishTime>07/22/2018 04:18:48</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/subscribe.cshtml">
+      <publishTime>07/22/2018 04:18:48</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/tos.cshtml">
+      <publishTime>07/22/2018 06:13:18</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/_footer.cshtml">
+      <publishTime>07/22/2018 05:01:58</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/_header.cshtml">
+      <publishTime>07/23/2018 07:29:01</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/Pages/_nav.cshtml">
+      <publishTime>07/23/2018 02:26:33</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/preview.jpg">
+      <publishTime>07/22/2018 04:18:48</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/theme.xml">
+      <publishTime>07/22/2018 04:19:10</publishTime>
+    </File>
+    <File Include="Themes/serendip.agency/_Layout.cshtml">
+      <publishTime>07/23/2018 07:18:57</publishTime>
+    </File>
     <File Include="Themes/strongly-typed/assets/css/font-awesome.min.css">
       <publishTime>09/26/2016 13:19:08</publishTime>
     </File>
@@ -12147,10 +13191,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/22/2018 05:02:39</publishTime>
     </File>
     <File Include="Themes/typokhat-api/Pages/compact.cshtml">
-      <publishTime>05/22/2018 05:16:21</publishTime>
+      <publishTime>06/12/2018 02:48:07</publishTime>
+    </File>
+    <File Include="Themes/typokhat-api/Pages/home.cshtml">
+      <publishTime>06/30/2018 18:19:04</publishTime>
+    </File>
+    <File Include="Themes/typokhat-api/Pages/sitemap.cshtml">
+      <publishTime>06/30/2018 13:43:23</publishTime>
+    </File>
+    <File Include="Themes/typokhat-api/Pages/subscribe.cshtml">
+      <publishTime>06/30/2018 16:59:36</publishTime>
     </File>
     <File Include="Themes/typokhat-api/preview.png">
-      <publishTime>05/19/2018 13:46:37</publishTime>
+      <publishTime>07/22/2018 21:20:35</publishTime>
     </File>
     <File Include="Themes/typokhat-api/theme.xml">
       <publishTime>05/19/2018 14:02:04</publishTime>
@@ -12663,7 +13716,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/26/2016 23:48:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/22/2018 05:41:19</publishTime>
+      <publishTime>07/24/2018 04:29:22</publishTime>
     </File>
   </ItemGroup>
 </Project>

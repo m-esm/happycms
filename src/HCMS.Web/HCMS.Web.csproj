@@ -669,6 +669,13 @@
       <DependentUpon>select2.css</DependentUpon>
     </Content>
     <Content Include="Packages\select2\select2.old.css" />
+    <Content Include="Packages\serendip-vi\favicon.png" />
+    <Content Include="Packages\serendip-vi\log-in-back-1.png" />
+    <Content Include="Packages\serendip-vi\log-in-back-2.png" />
+    <Content Include="Packages\serendip-vi\logo-fa.png" />
+    <Content Include="Packages\serendip-vi\system-log-in-table-1.svg" />
+    <Content Include="Packages\serendip-vi\system-log-in-table-2.png" />
+    <Content Include="Packages\serendip-vi\system-log-in-table-2.svg" />
     <Content Include="Packages\sweetalert\sweetalert.min.css">
       <DependentUpon>sweetalert.css</DependentUpon>
     </Content>
@@ -2291,12 +2298,15 @@
     <Content Include="Themes\Anzim\vendor\rs-plugin\js\jquery.themepunch.tools.min.js" />
     <Content Include="Themes\Anzim\vendor\simple-line-icons\css\simple-line-icons.min.css" />
     <Content Include="Themes\Anzim\vendor\vide\vide.min.js" />
+    <Content Include="Themes\serendip.agency\assets\favicon.png" />
     <Content Include="Themes\serendip.agency\assets\fonts\FontLicense.txt" />
     <Content Include="Themes\serendip.agency\assets\fonts\iranyekanwebbold.svg" />
     <Content Include="Themes\serendip.agency\assets\fonts\iranyekanweblight.svg" />
     <Content Include="Themes\serendip.agency\assets\fonts\iranyekanwebregular.svg" />
     <Content Include="Themes\serendip.agency\assets\svg\3rd-person-integrations-weather-calendar.svg" />
     <Content Include="Themes\serendip.agency\assets\svg\agreement-1.svg" />
+    <Content Include="Themes\serendip.agency\assets\svg\agreement-2.svg" />
+    <Content Include="Themes\serendip.agency\assets\svg\arrow-right.svg" />
     <Content Include="Themes\serendip.agency\assets\svg\astronaut-1-background.svg" />
     <Content Include="Themes\serendip.agency\assets\svg\astronaut-1-main-icon-monogram.svg" />
     <Content Include="Themes\serendip.agency\assets\svg\astronaut-1-planet-big.svg" />
@@ -2605,6 +2615,7 @@
     <Content Include="Themes\AnzimAzmoon\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
     <Content Include="Themes\AnzimAzmoon\_Layout.cshtml" />
     <Content Include="Themes\Anzim\consultants.json" />
+    <Content Include="Themes\Anzim\Pages\consultants_api.cshtml" />
     <None Include="Themes\Anzim\Pages\blog_api.cshtml" />
     <Content Include="Themes\Anzim\Pages\import.cshtml" />
     <Content Include="Themes\serendip.agency\_Layout.cshtml" />
@@ -2655,7 +2666,6 @@
     <Folder Include="Areas\Manage\Views\Shared\" />
     <Folder Include="Areas\Manage\Views\Stats\" />
     <Folder Include="Content\FileManager\userfiles\" />
-    <Folder Include="Packages\serendip-vi\" />
     <Folder Include="Scripts\vjs-lang\" />
     <Folder Include="Themes\AnzimAzmoon\img\clients\" />
     <Folder Include="Themes\AnzimAzmoon\img\demos\digital-agency\slides\" />
